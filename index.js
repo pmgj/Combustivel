@@ -20,7 +20,7 @@ function calcular() {
 }
 function registerEvents() {
     var form = document.forms[0];
-    form.gasolina.onkeyup = calcular;
-    form.etanol.onkeyup = calcular;
+    form.gasolina.oninput = calcular;
+    form.etanol.oninput = calcular;
 }
 window.onload = registerEvents;
