@@ -19,7 +19,7 @@ function calcular() {
     }
 }
 function registerEvents() {
-    var form = document.forms[0];
+    let form = document.forms[0];
     form.gasolina.oninput = calcular;
     form.etanol.oninput = calcular;
 }
